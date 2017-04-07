@@ -11,7 +11,7 @@
 [World Bank api documentation](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589)
 
 Stages:
-- [ ] 1 week - API Fundamentals
+- [X] 1 week - API Fundamentals
 - [ ] 2 week - Data types in Python library
 - [ ] 3 week - Data structure for research tasks
 - [ ] 4 week - "data mining" and executing research
