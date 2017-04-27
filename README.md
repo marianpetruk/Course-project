@@ -12,7 +12,7 @@
 
 Stages:
 - [X] 1 week - API Fundamentals
-- [ ] 2 week - Data types in Python library
+- [X] 2 week - Data types in Python library
 - [ ] 3 week - Data structure for research tasks
 - [ ] 4 week - "data mining" and executing research
 - [ ] 5 week - Result analysis. Project report. Documentation for developed modules.
