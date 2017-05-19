@@ -183,4 +183,4 @@ class Array2D(object):
             for j in range(0, self.num_cols()):
                 string += str(self[(i, j)]) + " "
             string += "\n"
-        return string[:-1]
+        return string[1:-1]

@@ -1,5 +1,5 @@
 import wbpy
-from modules.ADT.adt_class import Array2D
+from ADT.adt_class import Array2D
 
 api = wbpy.IndicatorAPI()
 iso_country_codes = ["UA", "PL"]
