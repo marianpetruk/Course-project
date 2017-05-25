@@ -1,8 +1,4 @@
-import wbpy
-from ADT.adt_class import Array2D
-
-api = wbpy.IndicatorAPI()
-iso_country_codes = ["UA", "PL"]
+from ADT.adt_class import *
 
 
 def main():
@@ -28,22 +24,18 @@ def main():
     high_tech_exports = "TX.VAL.TECH.CD"  # High-technology exports (current US$)
     science_tech_articles = "IP.JRN.ARTC.SC"  # Scientific and technical journal articles
 
-    dataset = api.get_dataset(total_population, iso_country_codes, date="1990:2017")
-    # print(dataset, end='\n\n')
-    print(dataset.as_dict(), end='\n\n')
-    # print(dataset.api_url, end='\n\n')
-    # print(dataset.indicator_name, end='\n\n')
+    indicator1 = indicator_adt(total_population)
+    print("Current indicator:", indicator1.indicator_name())
+    print("Api URL of the indicator:", indicator1.indicator_api_url())
+    print("Iso codes of countries in the indicator:", indicator1.country_codes())
+    print(indicator1)
 
-    # GDP using 2D_Array ADT
-    gdp_2d_array = Array2D(27, 2)
-    gdp_2d_array[(0, 0)] = "UA"
-    gdp_2d_array[(0, 1)] = "PL"
-    print("Num of rows in the gdp_2d_array =", gdp_2d_array.num_rows())
-    print("Num of columns in the gdp_2d_array =", gdp_2d_array.num_cols())
-    for i in range(1, 27):
-        gdp_2d_array[(i, 0)] = dataset.as_dict()['UA'][str(i-1+1990)]
-        gdp_2d_array[(i, 1)] = dataset.as_dict()['PL'][str(i-1+1990)]
-    print(gdp_2d_array)
+    indicator2 = indicator_adt(life_expectancy)
+    print("Current indicator:", indicator2.indicator_name())
+    print("Api URL of the indicator:", indicator2.indicator_api_url())
+    print("Iso codes of countries in the indicator:", indicator2.country_codes())
+    print(indicator2)
 
+    print(type(indicator2.get_array()))
 
 main()
