@@ -16,3 +16,6 @@ Stages:
 - [X] 3 week - Data structure for research tasks
 - [X] 4 week - "data mining" and executing research
 - [X] 5 week - Result analysis. Project report. Documentation for developed modules.
+
+### Screencast 
+[Short video presentation](https://drive.google.com/file/d/0B5ewVJ3eqrogVVhCcGR6Wk1pZW8/view?usp=sharing)
